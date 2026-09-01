@@ -4,7 +4,9 @@ Welcome to my engineering portfolio! This repository contains curated, highly te
 
 As a Business Informatics student and an active Fleet Group Leader, my passion lies in bridging the gap between physical operations and modern software engineering. Instead of publishing a monolithic application, I have extracted the most challenging engineering problems I solved during the development of this system.
 
-Each module below demonstrates my approach to system architecture, security, and algorithmic problem-solving in a real-world enterprise environment.
+🎓 **Full Research Paper & Documentation:**
+You can read the complete TDK thesis, detailed methodology, and architectural blueprints here: 
+👉 **[Read the Research Paper (OneDrive) 🔗][https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy9jZmFjNTE4NzJlMjI0OGNkL0lRQl9qbnloRF9wNVFyRThtcm8waWlNaUFYUTFtRzgyOXdqRHRhOV9mUkFZNUdnP2U9eVcyTlBT&cid=CFAC51872E2248CD&id=CFAC51872E2248CD%21sa17c8e7ffa0f4279b13c9aba348a2322&parId=CFAC51872E2248CD%21sb5bda9fdaa964a85a4a7d2b8ea7a6252&o=OneUp]**
 
 ---
 
