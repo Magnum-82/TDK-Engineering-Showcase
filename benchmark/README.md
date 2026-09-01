@@ -1,0 +1,2 @@
+Data-Driven Validation & Benchmarking
+To ensure the OCR Post-Processing engine is production-ready, I built a custom benchmark console application. It processed a dataset of real-world fleet images, logged the exact execution times (ms), and exported the matching success rates into a CSV for further analysis. This allowed me to fine-tune the Levenshtein sliding-window algorithm for maximum accuracy without sacrificing speed.
