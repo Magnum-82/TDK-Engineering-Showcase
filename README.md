@@ -1,15 +1,38 @@
-# TDK-Engineering-Showcase
-AiService:
-Secure NL2SQL (Natural Language to SQL) Engine
+# 🚙 Fleet Management Engineering Showcase (AEYE FOR FLEET)
 
-This module bridges the gap between non-technical fleet managers and the SQL database, allowing users to ask natural language questions (e.g., "Which vehicles have failed inspections this month?") and generating execution-ready SQL.
+Welcome to my engineering portfolio! This repository contains curated, highly technical Proof-of-Concept (PoC) modules from my award-winning Institutional Scientific Students' Association (TDK) project: **AI-based Condition Monitoring for Corporate Vehicle Fleets (AEYEFORFLEET)**.
 
-Key Architecture & Security Features:
+As a Business Informatics student and an active Fleet Group Leader, my passion lies in bridging the gap between physical operations and modern software engineering. Instead of publishing a monolithic application, I have extracted the most challenging engineering problems I solved during the development of this system.
 
-Defense in Depth: Employs a two-tier security model. The application layer filters for read-only intent, while the database layer executes the AI-generated queries using a strictly limited, Read-Only SQL credentials (SqlConnection), mitigating any AI-hallucinated SQL Injection risks.
+Each module below demonstrates my approach to system architecture, security, and algorithmic problem-solving in a real-world enterprise environment.
 
-Domain-Aware Prompting: The system prompt is dynamically injected with the database schema and explicit business logic translations (e.g., mapping logical flags like "SVillogo" to "yellow rotating beacon").
+---
 
-Dynamic Result Mapping: Uses raw ADO.NET SqlDataReader to map unpredictable query results into generic Dictionary<string, object> lists for seamless frontend serialization.
+## 📂 Featured Modules
 
-Modern AI SDK: Built with the latest Azure OpenAI v2 SDK, enforcing zero temperature for deterministic, hallucination-free code generation.
+### 1. [Platform-Independent Telemetry Validator (Sandbox Bypass)](./Telemetry-Sandbox-Bypass)
+* **The Challenge:** Losing direct hardware control when invoking the OS-native camera (MediaPicker Sandbox), resulting in blurry or tilted inspection photos.
+* **The Solution:** Built an asynchronous "blackbox" architecture using SQLite and real-time accelerometer data to retroactively validate photo stability via time-window synchronization.
+* **Keywords:** `.NET MAUI`, `Sensors`, `SQLite`, `SignalR`, `Asynchronous Processing`
+
+### 2. [OCR Post-Processing Engine](./OCR-PostProcessing)
+* **The Challenge:** Real-world Optical Character Recognition (OCR) failures on dirty, skewed, or partially covered license plates.
+* **The Solution:** Designed a lightweight, edge-friendly error correction pipeline combining Regex sanitization and a sliding-window Levenshtein distance algorithm to accurately match noisy AI outputs against a known fleet database.
+* **Keywords:** `C#`, `Algorithms`, `Regex`, `Levenshtein Distance`, `Benchmarking`
+
+### 3. [Secure NL2SQL Assistant](./NL2SQL-FleetAssistant)
+* **The Challenge:** Allowing non-technical managers to query the database using natural language without exposing the system to AI-hallucinated SQL injections.
+* **The Solution:** Implemented a "Defense in Depth" architecture utilizing Azure OpenAI, dynamic schema injection, and strict Read-Only ADO.NET connections to execute AI-generated queries safely.
+* **Keywords:** `ASP.NET Core`, `Azure OpenAI v2`, `Prompt Engineering`, `Security`, `ADO.NET`
+
+---
+
+## 🛠️ Tech Stack & Skills Demonstrated
+
+* **Languages:** C#, T-SQL, Bash
+* **Frameworks & Tools:** .NET MAUI, ASP.NET Core, SignalR, Entity Framework Core
+* **AI & Cloud:** Azure AI Vision, Azure OpenAI, Semantic Kernel concepts
+* **Software Engineering:** Clean Architecture principles, Defense in Depth, Fault Tolerance, Data-driven validation (xUnit, Benchmarking).
+
+## 💡 Why This Matters?
+These components were built to run in imperfect, real-world conditions. Whether it's throttling telemetry data for unstable mobile networks, correcting AI hallucinations with classic string matching, or securing database connections from LLMs, this repository reflects a pragmatic, robust approach to enterprise software development.
