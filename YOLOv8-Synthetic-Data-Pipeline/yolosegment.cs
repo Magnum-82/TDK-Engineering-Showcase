@@ -2,7 +2,7 @@
 using System.Text;
 
 // --- KONFIGURÁCIÓ (Már a jó adatokkal) ---
-string predictionKey = "252173b3722e4e6c99577f940fcc0e62";
+string predictionKey = "**************************";
 string endpoint = "https://germanywestcentral.api.cognitive.microsoft.com"; 
 Guid projectId = Guid.Parse("fa57bdf4-1565-406c-853d-acd197ccaa9c");
 string publishedName = "DAMSCAN";
